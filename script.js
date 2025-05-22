@@ -33,4 +33,22 @@ document.addEventListener('DOMContentLoaded', () => {
         textIndex = (textIndex + 1) % texts.length;
         interactiveText.textContent = texts[textIndex];
     });
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get a reference to the button using its ID
+
+    });
+
+    const navigateButton = document.getElementById('navigateButton');
+
+    // Add an event listener to the button
+    if (navigateButton) { // Ensure the button exists before adding an event listener
+        navigateButton.addEventListener('click', function () {
+            // Navigate to the new page
+            window.location.href = 'cat.html';
+            // Alternatively, for a "back-friendly" navigation:
+            // window.location.assign('another-page.html');
+            // Or to prevent going back to the current page:
+            // window.location.replace('another-page.html');
+        });
+    }
 });

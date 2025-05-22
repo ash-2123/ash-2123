@@ -29,7 +29,7 @@ body.dark-mode .call-to-action {
 }
 
 body.dark-mode .feature-item {
-    background-color: #4a4a4a;
+    background-color: #000000;
 }
 
 body.dark-mode footer {
@@ -38,12 +38,26 @@ body.dark-mode footer {
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 95%;
+    max-width: 1300px;
     margin: auto;
     overflow: hidden;
     padding: 20px 0;
-    background-color: #fff; /* Light container background */
+    background-color: #acacac; /* Light container background */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.containerCat {
+    width: 95%;
+    max-width: 1300px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+    background-color: #ff0000; /* Light container background */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 8px;
     margin-top: 20px;
@@ -130,6 +144,39 @@ body.dark-mode #interactive-text {
 body.dark-mode #interactive-text:hover {
     color: #66aaff;
 }
+
+.trainButton {
+     background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.trainButton:hover {
+    background-color: #0056b3;
+}
+
+.catButton {
+     background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.catButton:hover {
+    background-color: #0056b3;
+}
+
 
 .call-to-action {
     background-color: #007bff;
