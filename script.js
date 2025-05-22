@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
 
-    themeToggle.addEventListener('click', function() {
+    themeToggle.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
         // Optionally, save the user's preference to local storage
         if (body.classList.contains('dark-mode')) {
