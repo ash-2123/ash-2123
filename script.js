@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
 
-    themeToggle.addEventListener('click', () => {
+    themeToggle.addEventListener('click', function() {
         body.classList.toggle('dark-mode');
         // Optionally, save the user's preference to local storage
         if (body.classList.contains('dark-mode')) {
@@ -45,16 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
         navigateButton.addEventListener('click', function () {
             // Navigate to the new page
             window.location.href = 'cat.html';
-            // Alternatively, for a "back-friendly" navigation:
-            // window.location.assign('another-page.html');
-            // Or to prevent going back to the current page:
-            // window.location.replace('another-page.html');
+
         });
     }
     const back = document.getElementById('back');
-    back.ariaHidden('DOMContentLoaded', function (){ 
-        window.location.href = 'index.html'
+    // Add an event listener to the button
+    if (back) { // Ensure the button exists before adding an event listener
+        back.addEventListener('click', function () {
+            // Navigate to the new page
+            window.location.href = 'index.html';
 
-
-    });
+        });
+    }
 });
