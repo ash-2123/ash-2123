@@ -3,13 +3,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
 
-    themeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-        // Optionally, save the user's preference to local storage
-        if (body.classList.contains('dark-mode')) {
-            localStorage.setItem('theme', 'dark');
+    document.addEventListener('DOMContentLoaded', () => {
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Apply saved theme on page load (important for new pages)
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+        }
+
+        // Add event listener only if the button exists on this page
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                if (body.classList.contains('dark-mode')) {
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                }
+            });
         } else {
-            localStorage.setItem('theme', 'light');
+            console.warn("Theme toggle button not found on this page."); // Use warn instead of error if it's optional
         }
     });
 
@@ -18,21 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.add('dark-mode');
     }
 
-    // Interactive Text
-    const interactiveText = document.getElementById('interactive-text');
-    const texts = [
-        "Click this text to change it!",
-        "You clicked me! Awesome!",
-        "Isn't JavaScript cool?",
-        "Keep clicking for more!",
-        "Hello from the DOM!"
-    ];
-    let textIndex = 0;
-
-    interactiveText.addEventListener('click', () => {
-        textIndex = (textIndex + 1) % texts.length;
-        interactiveText.textContent = texts[textIndex];
-    });
+    
     document.addEventListener('DOMContentLoaded', function () {
         // Get a reference to the button using its ID
 

@@ -1,0 +1,117 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<root>
+<uri>
+<![CDATA[ http://api.bart.gov/api/route.aspx?cmd=routes ]]>
+</uri>
+<routes>
+<route>
+<name>Daly City to Dublin/Pleasanton</name>
+<abbr>DALY-DUBL</abbr>
+<routeID>ROUTE 12</routeID>
+<number>12</number>
+<hexcolor>#0099CC</hexcolor>
+<color>BLUE</color>
+<direction>North</direction>
+</route>
+<route>
+<name>Dublin/Pleasanton to Daly City</name>
+<abbr>DUBL-DALY</abbr>
+<routeID>ROUTE 11</routeID>
+<number>11</number>
+<hexcolor>#0099CC</hexcolor>
+<color>BLUE</color>
+<direction>South</direction>
+</route>
+<route>
+<name>Daly City to Berryessa/North San Jose</name>
+<abbr>DALY-BERY</abbr>
+<routeID>ROUTE 6</routeID>
+<number>6</number>
+<hexcolor>#339933</hexcolor>
+<color>GREEN</color>
+<direction>North</direction>
+</route>
+<route>
+<name>Berryessa/North San Jose to Daly City</name>
+<abbr>BERY-DALY</abbr>
+<routeID>ROUTE 5</routeID>
+<number>5</number>
+<hexcolor>#339933</hexcolor>
+<color>GREEN</color>
+<direction>South</direction>
+</route>
+<route>
+<name>Oakland Int'l Airport OAK to Coliseum</name>
+<abbr>COLS-OAKL</abbr>
+<routeID>ROUTE 19</routeID>
+<number>19</number>
+<hexcolor>#B0BEC7</hexcolor>
+<color>GREY</color>
+<direction>North</direction>
+</route>
+<route>
+<name>Coliseum to Oakland Int'l Airport OAK</name>
+<abbr>OAKL-COLS</abbr>
+<routeID>ROUTE 20</routeID>
+<number>20</number>
+<hexcolor>#B0BEC7</hexcolor>
+<color>GREY</color>
+<direction>South</direction>
+</route>
+<route>
+<name>Berryessa/North San Jose to Richmond</name>
+<abbr>BERY-RICH</abbr>
+<routeID>ROUTE 3</routeID>
+<number>3</number>
+<hexcolor>#FF9933</hexcolor>
+<color>ORANGE</color>
+<direction>North</direction>
+</route>
+<route>
+<name>Richmond to Berryessa/North San Jose</name>
+<abbr>RICH-BERY</abbr>
+<routeID>ROUTE 4</routeID>
+<number>4</number>
+<hexcolor>#FF9933</hexcolor>
+<color>ORANGE</color>
+<direction>South</direction>
+</route>
+<route>
+<name>Millbrae/SF Int'l Airport SFO to Richmond</name>
+<abbr>MLBR-RICH</abbr>
+<routeID>ROUTE 8</routeID>
+<number>8</number>
+<hexcolor>#FF0000</hexcolor>
+<color>RED</color>
+<direction>North</direction>
+</route>
+<route>
+<name>Richmond to SF Int'l Airport SFO/Millbrae</name>
+<abbr>RICH-MLBR</abbr>
+<routeID>ROUTE 7</routeID>
+<number>7</number>
+<hexcolor>#FF0000</hexcolor>
+<color>RED</color>
+<direction>South</direction>
+</route>
+<route>
+<name>Millbrae/SF Int'l SFO to Antioch</name>
+<abbr>SFIA-ANTC</abbr>
+<routeID>ROUTE 2</routeID>
+<number>2</number>
+<hexcolor>#FFFF33</hexcolor>
+<color>YELLOW</color>
+<direction>North</direction>
+</route>
+<route>
+<name>Antioch to SF Int'l Airport SFO/Millbrae</name>
+<abbr>ANTC-SFIA</abbr>
+<routeID>ROUTE 1</routeID>
+<number>1</number>
+<hexcolor>#FFFF33</hexcolor>
+<color>YELLOW</color>
+<direction>South</direction>
+</route>
+</routes>
+<message/>
+</root>
