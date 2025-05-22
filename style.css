@@ -20,7 +20,8 @@ body.dark-mode header {
 }
 
 body.dark-mode .container {
-    background-color: #3a3a3a; /* Darker container background */
+    background-color: #3a3a3a;
+    /* Darker container background */
 }
 
 body.dark-mode .call-to-action {
@@ -43,8 +44,9 @@ body.dark-mode footer {
     margin: auto;
     overflow: hidden;
     padding: 20px 0;
-    background-color: #acacac; /* Light container background */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #acacac;
+    /* Light container background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -57,8 +59,9 @@ body.dark-mode footer {
     margin: auto;
     overflow: hidden;
     padding: 20px 0;
-    background-color: #ff0000; /* Light container background */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #acacac;
+    /* Light container background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -77,11 +80,33 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Adjust padding for header container */
-    background: none; /* Remove container background for header */
-    box-shadow: none; /* Remove container shadow for header */
-    margin: 0 auto; /* Reset margins for header container */
-    width: 90%; /* Ensure header container takes full width */
+    padding: 0 20px;
+    /* Adjust padding for header container */
+    background: none;
+    /* Remove container background for header */
+    box-shadow: none;
+    /* Remove container shadow for header */
+    margin: 0 auto;
+    /* Reset margins for header container */
+    width: 90%;
+    /* Ensure header container takes full width */
+    max-width: 1200px;
+}
+
+header .containerCat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* Adjust padding for header container */
+    background: none;
+    /* Remove container background for header */
+    box-shadow: none;
+    /* Remove container shadow for header */
+    margin: 0 auto;
+    /* Reset margins for header container */
+    width: 90%;
+    /* Ensure header container takes full width */
     max-width: 1200px;
 }
 
@@ -110,6 +135,23 @@ header h1 {
     padding: 60px 20px;
     background-color: #e2e2e2;
     border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.style {
+    margin: 5%;
+    float: left;
+    width: 25%;
+}
+
+img {
+    width: 90%;
+    height: auto;
+}
+
+.heroCat {
+    box-align: center;
+    padding: 20px 20px;
     margin-bottom: 20px;
     transition: background-color 0.3s ease;
 }
@@ -146,7 +188,7 @@ body.dark-mode #interactive-text:hover {
 }
 
 .trainButton {
-     background-color: #007bff;
+    background-color: #007bff;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -162,7 +204,7 @@ body.dark-mode #interactive-text:hover {
 }
 
 .catButton {
-     background-color: #007bff;
+    background-color: #007bff;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -210,13 +252,13 @@ body.dark-mode #interactive-text:hover {
     flex: 1;
     min-width: 280px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 body.dark-mode .feature-item {
     border-color: #555;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .feature-item h3 {
@@ -242,6 +284,11 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .containerCat {
         flex-direction: column;
         text-align: center;
     }
