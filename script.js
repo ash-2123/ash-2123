@@ -51,4 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // window.location.replace('another-page.html');
         });
     }
+    var back = document.getElementById('back');
+    back.ariaHidden('DOMContentLoaded', () => { 
+        window.location.href = 'index.html'
+
+
+    });
 });
