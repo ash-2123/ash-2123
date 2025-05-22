@@ -203,6 +203,20 @@ body.dark-mode #interactive-text:hover {
     background-color: #0056b3;
 }
 
+.back {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: double;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    curser: pointer;
+}
+
+.back:hover {
+    background-color: #0056b3;
+}
 .catButton {
     background-color: #007bff;
     color: white;
