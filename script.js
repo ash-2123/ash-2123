@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     var back = document.getElementById('back');
-    back.ariaHidden('DOMContentLoaded', () => { 
+    back.ariaHidden('DOMContentLoaded', function (){ 
         window.location.href = 'index.html'
 
 
