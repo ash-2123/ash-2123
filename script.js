@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // window.location.replace('another-page.html');
         });
     }
-    var back = document.getElementById('back');
+    const back = document.getElementById('back');
     back.ariaHidden('DOMContentLoaded', function (){ 
         window.location.href = 'index.html'
 
